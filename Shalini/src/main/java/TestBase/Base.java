@@ -7,6 +7,8 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Base {
@@ -30,9 +32,24 @@ public class Base {
 
 	public static void setup()
 	{
-       System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hussain\\eclipse-workspace\\Shalini\\src\\main\\resources\\Drivers\\Firefox\\geckodriver.exe");
+String browser= prop.getProperty("browser");
 		
-		driver = new FirefoxDriver();
+		if(browser.equalsIgnoreCase("Firefox"))
+		{
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Hussain\\eclipse-workspace\\FrameworkWithSelenium\\src\\main\\resources\\Drivers\\Firefox\\geckodriver.exe");
+	    driver= new FirefoxDriver();
+		}
+		else if(browser.equalsIgnoreCase("Chrome"))
+		{
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Hussain\\eclipse-workspace\\FrameworkWithSelenium\\src\\main\\resources\\Drivers\\Firefox\\geckodriver.exe");
+		    driver= new ChromeDriver();
+		}
+		else if(browser.equalsIgnoreCase("Edge"))
+		{
+			System.setProperty("webdriver.edge.driver", "C:\\Users\\Hussain\\eclipse-workspace\\FrameworkWithSelenium\\src\\main\\resources\\Drivers\\Firefox\\geckodriver.exe");
+		    driver= new EdgeDriver();
+		}
+		
 		
 		driver.manage().window().maximize();
 		
