@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-30T20:38:30 IST" name="Amazon Test Suite" finished-at="2023-12-30T20:39:19 IST" duration-ms="49365">
+    <groups>
+    </groups>
+    <test started-at="2023-12-30T20:38:30 IST" name="Default test" finished-at="2023-12-30T20:39:19 IST" duration-ms="49365">
+      <class name="TestCases.AddAddress">
+        <test-method signature="addAddress()[pri:0, instance:TestCases.AddAddress@c8c12ac]" started-at="2023-12-30T20:38:30 IST" name="addAddress" finished-at="2023-12-30T20:38:44 IST" duration-ms="13902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addAddress -->
+      </class> <!-- TestCases.AddAddress -->
+      <class name="TestCases.DeleteAddress">
+        <test-method signature="setUp()[pri:0, instance:TestCases.DeleteAddress@67c27493]" started-at="2023-12-30T20:39:02 IST" name="setUp" finished-at="2023-12-30T20:39:19 IST" duration-ms="17296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- TestCases.DeleteAddress -->
+      <class name="TestCases.EditAddress">
+        <test-method signature="editAdress()[pri:0, instance:TestCases.EditAddress@77fbd92c]" started-at="2023-12-30T20:38:44 IST" name="editAdress" finished-at="2023-12-30T20:39:02 IST" duration-ms="18061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editAdress -->
+      </class> <!-- TestCases.EditAddress -->
+    </test> <!-- Default test -->
+  </suite> <!-- Amazon Test Suite -->
+</testng-results>

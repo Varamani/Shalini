@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Amazon Test Suite" >
+	<listeners>
+		<listener class-name="Listners.Listener"></listener>
+	</listeners>
+  <test name="Default test" >
+    <classes>
+      <class name="TestCases.AddAddress"/>
+      <class name="TestCases.EditAddress"/>
+      <class name="TestCases.DeleteAddress"/>
+    </classes>
+  </test> 
+</suite>
